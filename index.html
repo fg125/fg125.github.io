@@ -299,88 +299,21 @@
 
       
         
-          
-            <h1 id="多元函数微分学"><a href="#多元函数微分学" class="headerlink" title="多元函数微分学"></a>多元函数微分学</h1><h2 id="概念（偏导数本质上是一元函数的f导数-要理解）"><a href="#概念（偏导数本质上是一元函数的f导数-要理解）" class="headerlink" title="概念（偏导数本质上是一元函数的f导数 要理解）"></a>概念（偏导数本质上是一元函数的f导数 要理解）</h2><ul>
-<li>偏导数$f’<em>x(x_0.y_0)就是\psi’(x_0)=f(x,y_0) 在x = x_0处的导数，即f_x(x_0,y_0) = \psi’(x_0) = \frac{df(x,y_0)}{dx}|</em>{x=x_0}$</li>
-<li>==连续不一定有偏导，更不一定可微，有偏导不一定连续,也不一定可微，可微则偏导存在，有连续的偏导一定可微==</li>
+          <h1 id="多元函数微分学"><a href="#多元函数微分学" class="headerlink" title="多元函数微分学"></a>多元函数微分学</h1><h2 id="概念（偏导数本质上是一元函数的f导数-要理解）"><a href="#概念（偏导数本质上是一元函数的f导数-要理解）" class="headerlink" title="概念（偏导数本质上是一元函数的f导数 要理解）"></a>概念（偏导数本质上是一元函数的f导数 要理解）</h2><ul>
+<li>偏导数</li>
+</ul>
+<p>$$<br>f’<em>x(x_0.y_0)就是\psi’(x_0)=f(x,y_0) 在x = x_0处的导数，即f_x(x_0,y_0) = \psi’(x_0) = \frac{df(x,y_0)}{dx}|</em>{x=x_0}<br>$$</p>
+<ul>
+<li><a style="color:red">连续不一定有偏导，更不一定可微，有偏导不一定连续,也不一定可微，可微则偏导存在，有连续的偏导一定可微</a></li>
 <li>偏导数的几何意义</li>
-<li>全微分: $\Delta  z= A\Delta  x+B\Delta y+ o(\rho)  AB与\Delta x \Delta y 无关，只有xy本身有关 \rho = \sqrt{(\Delta x)^2+(\Delta y)^2}$</li>
-<li>如果函数z=f(x,y)在点(x,y)处可微，则该函数在点(x,y)处的偏导数$dz = \frac{\vartheta z }{\vartheta x} dx +\frac{\vartheta z }{\vartheta y} dy  $</li>
-<li>如果函数的偏导数$\frac{\vartheta z }{\vartheta x}  \frac{\vartheta z }{\vartheta y} $在(x,y)处连续，则函数z=f(x,y)在该店可微</li>
-<li>某点极限不存在必不连续（或者理解为证明连续就求极限）</li>
 </ul>
-<h2 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h2><ul>
-<li><p>求偏导数的两种方法：1，用公式 2，去求导</p>
-</li>
-<li><p>证明二重积分不存在</p>
-</li>
-<li><p>求二重极限的四种方法：</p>
-<ul>
-<li>利用极限的性质（四则运算，夹逼定理）</li>
-<li>消除分母中极限为0的因子（通常采用有理化，等价无穷小代换等）</li>
-<li>转换为一元函数极限</li>
-<li>利用无穷小量与有界变量之积为无穷小量</li>
-</ul>
-</li>
-<li><p>讨论二元函数的可微性</p>
-<ul>
-<li>利用可微的定义</li>
-</ul>
-<p>$$<br>1,判断 f_x’(x_0,y_0) 和 f_y’(x_0,y_0)是否存在 \<br>2,\lim_{\Delta x \to 0\ \Delta y \to 0}\frac{[f(x_0 + \Delta x,y_0 + \Delta y)-f(x_0,y_0)] - [f_x’(x_0,y_0) \Delta x + f_y’(x_0,y_0) \Delta y] }{\rho} = 0是否成立<br>$$</p>
-</li>
-</ul>
-<ul>
-<li>利用可微的必要条件：可微的函数必可导-》不可导的函数必不可微</li>
-<li>利用可微的充分条件：有连续一阶偏导数的函数一定可微</li>
-</ul>
-<h2 id="多元函数的微分法"><a href="#多元函数的微分法" class="headerlink" title="多元函数的微分法"></a>多元函数的微分法</h2><ul>
-<li><p>复合函数的求导法则（链式法则，略）</p>
-</li>
-<li><p>高阶混合偏导数如果都连续，其值与求导次序无关</p>
-</li>
-<li><p>$F’_x = f_x(x,y)$</p>
-</li>
-<li><p>$\frac{dy}{dx} = - \frac{F’_x}{F’_y}$</p>
-</li>
-<li><p>有一个二元函数 f(x, y)=x²+4y² 那么，df(x, y)/dx=2x → df(x, y)=2xdx</p>
-</li>
-</ul>
-<h3 id="隐函数求导公式"><a href="#隐函数求导公式" class="headerlink" title="隐函数求导公式"></a>隐函数求导公式</h3><p>  $$<br>  \frac{dy}{dx} = - \frac{F_x’}{F_y’}<br>  \ \frac{\partial z}{\partial x} = - \frac{F_x’}{F_z’},\frac{\partial z}{\partial y} = - \frac{F_y’}{F_y’}<br>  $$</p>
-<h2 id="极值与最值"><a href="#极值与最值" class="headerlink" title="极值与最值"></a>极值与最值</h2><h3 id="极值"><a href="#极值" class="headerlink" title="极值"></a>极值</h3><ul>
-<li>无条件极值<ul>
-<li>驻点 $f_x’(x,y)=0 f_y’(x,y)=0 同时成立的点（x，y）$</li>
-<li>二元函数取极值 $AC - B^2$  &gt; 0,若A&gt;0 极小值，A&lt;0极大值</li>
-</ul>
-</li>
-<li>有条件的极值<ul>
-<li>求函数f(x,y)在条件$\varphi(x,y) = 0 $下极值</li>
-</ul>
-</li>
-</ul>
-<p>$$<br>1, 构造拉格朗日函数F(x,y,\lambda)=f(x,y)+\lambda \varphi(x,y)<br>\ 2,解方程组<br>\ \begin{cases}<br>\frac{\partial F}{\partial x} = \frac{\partial f}{\partial x} + \lambda\frac{\partial \varphi}{\partial x}=0 \<br>\frac{\partial F}{\partial y} = \frac{\partial f}{\partial y} + \lambda\frac{\partial \varphi}{\partial y}=0 \<br>\frac{\partial F}{\partial \lambda} = \varphi(x,y) = 0<br>\end{cases}<br>$$</p>
-<h2 id="方向导数和梯度"><a href="#方向导数和梯度" class="headerlink" title="方向导数和梯度"></a>方向导数和梯度</h2><h3 id="方向导数和梯度-1"><a href="#方向导数和梯度-1" class="headerlink" title="方向导数和梯度"></a>方向导数和梯度</h3><ul>
-<li>方向导数是一个数，反映的是f(x,y)在$p_0$ 点沿方向v的变化率</li>
-<li>偏导数是多个数，指多元函数沿坐标轴方向的方向导数，因此二元函数有2个偏导数</li>
-<li>偏导函数是一个函数，是一个关于点的偏导数的函数</li>
-<li>梯度：一个向量，每个元素为函数时一元变量的偏导数，既有大小，也有方向</li>
-<li>梯度的方向为u(x,y)在这点增长最快的方向，梯度的模为方向导数的最大值</li>
-</ul>
-<h4 id="曲-面-的切平面和法线"><a href="#曲-面-的切平面和法线" class="headerlink" title="曲==面==的切平面和法线"></a>曲==面==的切平面和法线</h4><ul>
-<li><p>$$<br>曲面方程常见的两种形式：F(x,y,z) =0 或z=f(x,y)<br>$$</p>
-</li>
-<li><p>$$<br>\begin{align}<br>&amp;设曲面方程F(x,y,z) =0，且有点(x_0,y_0,z_0)，\ &amp;其三个偏导数F_x’(x_0,y_0,z_0),F_y’(x_0,y_0,z_0),F_z’(x_0,y_0,z_0)不同时为0，\<br>&amp;则该曲面在点(x_0,y_0,z_0) 处的法向量为 n ={F_x’(x_0,y_0,z_0),F_y’(x_0,y_0,z_0),F_z’(x_0,y_0,z_0)} \<br>&amp;过点(x_0,y_0,z_0)的切平面和法线方程分别为 \<br>&amp;F_x’(x_0,y_0,z_0)(x-x_0)+F_y’(x_0,y_0,z_0)(y-y_0)+F_z’(x_0,y_0,z_0)(z-z_0)=0\<br>&amp;\frac{x-x_0}{F_x’(x_0,y_0,z_0)} = \frac{y-y_0}{F_y’(x_0,y_0,z_0)} = \frac{z-z_0}{F_z’(x_0,y_0,z_0)}<br>\end{align}<br>$$</p>
-</li>
-<li><p>$$<br>\begin{align}<br>&amp;设曲面方程z=f(x,y),则其可视为f(x,y)-z=0 \<br>&amp; 其法向量为n={f_x’(x_0.y_0),f_y’(x_0,y_0),-1}<br>\end{align}<br>$$</p>
-</li>
-</ul>
-<h4 id="曲-线-的切线和法平面"><a href="#曲-线-的切线和法平面" class="headerlink" title="曲==线==的切线和法平面"></a>曲==线==的切线和法平面</h4><ul>
-<li><p>$$<br>\begin{align}<br>&amp;设曲线的方程为参数式：\begin{cases}x=x(t)\y=y(t)\z=z(t) \end{cases}则曲线有点P_0(x_0,y_0,z_0)\<br>&amp; 该点处的切向量为\tau ={x’(t_0),y’(t_0),z’(t_0)} \<br>&amp; 则切线方程为\frac{x-x_0}{x’(t_0)} = \frac{y-y_0}{y’(t_0)} =\frac{z-z_0}{z’(t_0)},\<br>&amp;法平面为x’(t_0)(x-x_0)+y’(t_0)(y-y_0)+z’(t_0)(z-z_0)=0<br>\end{align}<br>$$</p>
-</li>
-<li><p>$$<br>\begin{align}<br>&amp;设曲线的方程为参数式：\begin{cases}F(x,y,z)=0\G(x,y,z)=0 \end{cases}则曲线有点P_0(x_0,y_0,z_0)\<br>&amp; 该点处的切向量为曲面F(x,y,z)=0和曲面G(x,y,z)=0在该点的方向量n_1和n_2的向量机 即\tau = n_1     \times n_2 \<br>&amp; 其中n_1 = {F_x’(x_0,y_0,z_0),F_y’(x_0,y_0,z_0),F_z’(x_0,y_0,z_0)} ,n_2 = {G_x’(x_0,y_0,z_0),G_y’(x_0,y_0,z_0),G_z’(x_0,y_0,z_0)} \<br>&amp; 记 n_1 \times n_2 = {A,B,C} \<br>&amp; 则切线方程为\frac{x-x_0}{A} = \frac{y-y_0}{B} =\frac{z-z_0}{C},\<br>&amp;法平面为A(x-x_0)+B(y-y_0)+C(z-z_0)=0<br>\end{align}<br>$$</p>
-</li>
-</ul>
-<h4 id="泰勒定理"><a href="#泰勒定理" class="headerlink" title="泰勒定理"></a>泰勒定理</h4>
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/07/30/多元函数微分学/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>

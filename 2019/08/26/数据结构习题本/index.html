@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="考研,数据结构,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="大题和错题">
+<meta name="keywords" content="考研,数据结构">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据结构习题本">
+<meta property="og:url" content="http://yoursite.com/2019/08/26/数据结构习题本/index.html">
+<meta property="og:site_name" content="FG125的不可说空间">
+<meta property="og:description" content="大题和错题">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-08-27T03:21:22.358Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="数据结构习题本">
+<meta name="twitter:description" content="大题和错题">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/08/26/数据结构习题本/">
+
+
+
+
+
+  <title>数据结构习题本 | FG125的不可说空间</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband">
+	<a href="https://github.com/you"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a>
+</div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">FG125的不可说空间</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-picture">
+          <a href="/picture/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-download"></i> <br>
+            
+            picture
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/26/数据结构习题本/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="fg125">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="FG125的不可说空间">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">数据结构习题本</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-26T18:51:14+08:00">
+                2019-08-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>大题和错题</p>
+<a id="more"></a>
+
+<h2 id="大题"><a href="#大题" class="headerlink" title="大题"></a>大题</h2><h3 id="树的算法题主要是掌握先序后序中序层次的递归与非递归算法"><a href="#树的算法题主要是掌握先序后序中序层次的递归与非递归算法" class="headerlink" title="树的算法题主要是掌握先序后序中序层次的递归与非递归算法"></a>树的算法题主要是掌握先序后序中序层次的递归与非递归算法</h3><ol>
+<li>编写后序遍历二叉树的非递归算法<a style="color:#036465">后序遍历非递归</a></li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">PostOrder</span><span class="params">(BiTree T)</span></span>&#123;</span><br><span class="line">    InitStack(S);</span><br><span class="line">    p = T;</span><br><span class="line">    r = <span class="literal">NULL</span>;</span><br><span class="line">    <span class="keyword">while</span>(p || !isEmpty(S))&#123;</span><br><span class="line">        <span class="keyword">if</span>(p)&#123;</span><br><span class="line">            push(S,p);</span><br><span class="line">            p = p-&gt;lchild;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            GetTop(S,p);</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;rchild &amp;&amp; p-&gt;rchild!=r)&#123;</span><br><span class="line">                <span class="comment">//若右子树存在且没被访问过</span></span><br><span class="line">                p = p-&gt;rchild;</span><br><span class="line">                push(S,p);</span><br><span class="line">                p = p-&gt;lchild;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                pop(S,p);</span><br><span class="line">                visit(p-&gt;data);</span><br><span class="line">                r = p;</span><br><span class="line">                p = <span class="literal">NULL</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>2.采用层次遍历的非递归方法求解二叉树的高度<a style="color:#036465">层次遍历非递归</a></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Btdepth</span><span class="params">(BiTree T)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(!T)<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> front =<span class="number">-1</span>,rear=<span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">int</span> last =<span class="number">0</span>,level=<span class="number">0</span>;</span><br><span class="line">    BiTree Q[MaxSize];</span><br><span class="line">    Q[++rear] = T;</span><br><span class="line">    BiTree p;</span><br><span class="line">    <span class="keyword">while</span>(front&lt;rear)&#123;</span><br><span class="line">        p=Q[++front];</span><br><span class="line">        <span class="keyword">if</span>(p-&gt;lchild)Q[++rear]=p-&gt;lchild;</span><br><span class="line">        <span class="keyword">if</span>(p-&gt;rchild)Q[++rear]=p-&gt;rchild;</span><br><span class="line">        <span class="keyword">if</span>(front == last)&#123;</span><br><span class="line">            <span class="comment">//该层的最右结点</span></span><br><span class="line">            level++;</span><br><span class="line">            last = rear;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> level;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>算法实现通过先序序列和中序序列确定唯一一颗二叉树《有点折半查找似的》</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">BiTree <span class="title">PreInCreat</span><span class="params">(ElemType A[],ElemType B[],<span class="keyword">int</span> l1,<span class="keyword">int</span> h1,<span class="keyword">int</span> l2,<span class="keyword">int</span> h2)</span></span>&#123;</span><br><span class="line">    <span class="comment">//l1,h2为先序的第一和最后一个结点下标，l2,h2为中序的第一和最后一个结点下标</span></span><br><span class="line">    <span class="comment">// 初始调用时 l1 =l2=1,h1 = h2 =n;</span></span><br><span class="line">    root=(BiTNode *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(BiTNode));</span><br><span class="line">    root-&gt;data = A[l1];</span><br><span class="line">    <span class="keyword">for</span>(i=l2;B[i]!=root-&gt;data;i++);</span><br><span class="line">    llen = i-l2;</span><br><span class="line">    rlen = h2-i;</span><br><span class="line">    <span class="keyword">if</span>(llen) </span><br><span class="line">        root-&gt;lchild = PreInCreat(A,B,l1+<span class="number">1</span>,l1+llen,l2,l2+llen<span class="number">-1</span>);</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        root-&gt;lchild = <span class="literal">NULL</span>;</span><br><span class="line">    <span class="keyword">if</span>(rlen)</span><br><span class="line">        root-&gt;rchild = PreInCreat(A,B,h1+<span class="number">1</span>,h1+rlen,h2,h2+rlen<span class="number">-1</span>);</span><br><span class="line">     <span class="keyword">else</span></span><br><span class="line">         root-&gt;rchild = <span class="literal">NULL</span>;</span><br><span class="line">    <span class="keyword">return</span> root;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>二叉树采用二叉链存储结构存储，设计一个算法求先序遍历序列中第k‘个结点的值<a style="color:#036465">先序遍历递归</a></li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i =<span class="number">1</span>;</span><br><span class="line"><span class="function">ElemType <span class="title">PreNode</span><span class="params">(BiTree b,<span class="keyword">int</span> k)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(b==<span class="literal">NULL</span>)<span class="keyword">return</span> <span class="string">'#'</span>;</span><br><span class="line">    <span class="keyword">if</span>(i==k)<span class="keyword">return</span> b-&gt;data;</span><br><span class="line">    i++;</span><br><span class="line">    ch=PreNode(b-&gt;lchild,k);</span><br><span class="line">    <span class="keyword">if</span>(ch == <span class="string">'#'</span>)&#123;</span><br><span class="line">        ch = PreNode(b-&gt;rchild,k);</span><br><span class="line">        <span class="keyword">return</span> ch;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li><a style="color:red">找到二叉树p,q的最近公共结点r</a></li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span>&#123;</span></span><br><span class="line">    BiTree t;</span><br><span class="line">    <span class="keyword">int</span> tag; <span class="comment">// tag=0时代表左节点已被访问，tag=1时代表右节点已被访问</span></span><br><span class="line">&#125;<span class="built_in">stack</span>;</span><br><span class="line"><span class="built_in">stack</span> s[],s1[];</span><br><span class="line"><span class="function">BiTree <span class="title">Ancestor</span><span class="params">(BiTree ROOT,BiTNode *p,BiTNode *q)</span></span>&#123;</span><br><span class="line">    top = <span class="number">0</span>;bt=ROOT;</span><br><span class="line">    <span class="keyword">while</span>(bt!=<span class="literal">NULL</span>||top&gt;<span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">while</span>(bt!=<span class="literal">NULL</span>&amp;&amp;bt!=p&amp;&amp;bt!=q)&#123;</span><br><span class="line">            <span class="keyword">while</span>(bt!=<span class="literal">NULL</span>)&#123;</span><br><span class="line">                s[++top].t =bt;</span><br><span class="line">                s[top].tag =<span class="number">0</span> ;</span><br><span class="line">                bt = bt-&gt;lchild;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(top!=<span class="number">0</span>&amp;&amp;s[top].tag==<span class="number">1</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(s[top].t==p)&#123;</span><br><span class="line">                <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=top;i++)&#123;</span><br><span class="line">                    s1[i]=s[i];</span><br><span class="line">                    top1=top;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span>(s[top].t==q)&#123;</span><br><span class="line">                    <span class="keyword">for</span>(i=top;i&gt;<span class="number">0</span>;i--)&#123;</span><br><span class="line">                        <span class="keyword">for</span>(j=top1;j&gt;<span class="number">0</span>;j--)&#123;</span><br><span class="line">                            <span class="keyword">if</span>(s1[j].t==s[i].t)</span><br><span class="line">                                <span class="keyword">return</span> s[i].t;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="comment">//top--;?</span></span><br><span class="line">                &#125;top--;</span><br><span class="line">            &#125;<span class="comment">//while</span></span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="6">
+<li>算中序线索二叉树里查找指定结点在后序的前驱结点的算法</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">BiThrTree <span class="title">InPostPre</span><span class="params">(BiThrTree t,BiThrTree p)</span></span>&#123;</span><br><span class="line">    BiThrTree q;</span><br><span class="line">    <span class="keyword">if</span>(p-&gt;rtag==<span class="number">0</span>)q = p-&gt;rchild;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(p-&gt;ltag ==<span class="number">0</span> )q= p-&gt;lchild;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (p-&gt;lchild == <span class="literal">NULL</span>) q=<span class="literal">NULL</span> <span class="comment">// p是中序序列第一个结点</span></span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="comment">//找p的祖先，再找祖先的做子女</span></span><br><span class="line">            <span class="keyword">while</span>(p-&gt;ltag==<span class="number">1</span>&amp;&amp;p-&gt;lchild!=<span class="literal">NULL</span>)p=p-&gt;child;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;ltag==<span class="number">0</span>)&#123;</span><br><span class="line">                q=p-&gt;lchild;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                q=<span class="literal">NULL</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="keyword">return</span> q;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="错题"><a href="#错题" class="headerlink" title="错题"></a>错题</h2>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/考研/" rel="tag"># 考研</a>
+          
+            <a href="/tags/数据结构/" rel="tag"># 数据结构</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/08/25/151期LeetCode/" rel="next" title="151期LeetCode">
+                <i class="fa fa-chevron-left"></i> 151期LeetCode
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="fg125">
+            
+              <p class="site-author-name" itemprop="name">fg125</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#大题"><span class="nav-number">1.</span> <span class="nav-text">大题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#树的算法题主要是掌握先序后序中序层次的递归与非递归算法"><span class="nav-number">1.1.</span> <span class="nav-text">树的算法题主要是掌握先序后序中序层次的递归与非递归算法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#错题"><span class="nav-number">2.</span> <span class="nav-text">错题</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">fg125</span>
+
+  
+</div>
+
+<!--
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+-->
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>

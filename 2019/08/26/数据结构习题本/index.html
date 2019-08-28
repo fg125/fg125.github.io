@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="FG125的不可说空间">
 <meta property="og:description" content="大题和错题">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-27T03:21:22.358Z">
+<meta property="og:updated_time" content="2019-08-28T07:54:37.175Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据结构习题本">
 <meta name="twitter:description" content="大题和错题">
@@ -348,7 +348,11 @@
 </ol>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">BiThrTree <span class="title">InPostPre</span><span class="params">(BiThrTree t,BiThrTree p)</span></span>&#123;</span><br><span class="line">    BiThrTree q;</span><br><span class="line">    <span class="keyword">if</span>(p-&gt;rtag==<span class="number">0</span>)q = p-&gt;rchild;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(p-&gt;ltag ==<span class="number">0</span> )q= p-&gt;lchild;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (p-&gt;lchild == <span class="literal">NULL</span>) q=<span class="literal">NULL</span> <span class="comment">// p是中序序列第一个结点</span></span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="comment">//找p的祖先，再找祖先的做子女</span></span><br><span class="line">            <span class="keyword">while</span>(p-&gt;ltag==<span class="number">1</span>&amp;&amp;p-&gt;lchild!=<span class="literal">NULL</span>)p=p-&gt;child;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;ltag==<span class="number">0</span>)&#123;</span><br><span class="line">                q=p-&gt;lchild;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                q=<span class="literal">NULL</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="keyword">return</span> q;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="错题"><a href="#错题" class="headerlink" title="错题"></a>错题</h2>
+<h2 id="错题"><a href="#错题" class="headerlink" title="错题"></a>错题</h2><ul>
+<li>平衡二叉树的结点递推公式为：$n_0=0,n_1=1,n_2=2,n_h=1+n_{h-1}+n_{h-2}$</li>
+<li></li>
+</ul>
+
       
     </div>
     

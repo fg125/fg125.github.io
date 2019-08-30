@@ -90,7 +90,7 @@
 <meta property="og:image" content="https://s2.ax1x.com/2019/08/17/mKPGp8.jpg">
 <meta property="og:image" content="https://s2.ax1x.com/2019/08/18/mQD9bV.png">
 <meta property="og:image" content="https://s2.ax1x.com/2019/08/18/mQDub6.png">
-<meta property="og:updated_time" content="2019-08-28T13:16:10.812Z">
+<meta property="og:updated_time" content="2019-08-30T02:39:54.694Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="矩阵">
 <meta name="twitter:description" content="不同于行列式">
@@ -369,6 +369,30 @@
 <p><img src="https://s2.ax1x.com/2019/08/17/mKPGp8.jpg" alt="方法五"></p>
 </li>
 </ul>
+<h3 id="伴随矩阵及其运算"><a href="#伴随矩阵及其运算" class="headerlink" title="伴随矩阵及其运算"></a>伴随矩阵及其运算</h3><p>对于任意n阶方阵都有$AA^* = A^<em>A = |A|E ,|A^</em>| = A^{n-1}​$</p>
+<p>$(kA)(kA^<em>) = |kA^</em>|E$</p>
+<p>$(A^T)^* = (A^<em>)^T,(A^{-1})^</em>=(A^<em>)^{-1},(AB)^</em>=B^<em>A^</em>,(A^<em>)^</em>=|A|^{n-2}A$</p>
+<blockquote>
+<p>$(A+B)^* \ne A^<em>+B^</em>$</p>
+</blockquote>
+<h3 id="初等变换与初等矩阵"><a href="#初等变换与初等矩阵" class="headerlink" title="初等变换与初等矩阵"></a>初等变换与初等矩阵</h3><h4 id="初等变换"><a href="#初等变换" class="headerlink" title="初等变换"></a>初等变换</h4><ul>
+<li>一个非零常数乘矩阵的某一列（行）</li>
+<li>互换矩阵中某两行(列)的位置</li>
+<li>将矩阵的某一行(列)的k倍加到另一行(列)</li>
+</ul>
+<h4 id="初等矩阵"><a href="#初等矩阵" class="headerlink" title="初等矩阵"></a>初等矩阵</h4><blockquote>
+<p>由单位矩阵经过一次初等变换得到的矩阵称为初等矩阵</p>
+</blockquote>
+<p>$E_i(k)表示单位矩阵E的第i行（或第i列）乘以非零常数k所得到的的矩阵$</p>
+<p>$E_{ij}表示单位矩阵交换第i行与第j行（列）所得到的矩阵$</p>
+<p>$E_{ij}(k)表示单位矩阵的第j行的k倍加到第i行（或第i列的k倍加到第j列）所得到的矩阵$</p>
+<h4 id="初等矩阵性质"><a href="#初等矩阵性质" class="headerlink" title="初等矩阵性质"></a>初等矩阵性质</h4><ul>
+<li>初等矩阵转置仍为初等矩阵</li>
+<li>初等矩阵都是可逆矩阵，且逆矩阵仍是同一类型的初等矩阵</li>
+<li>若A是可逆矩阵，则A可以表示成有限个初等矩阵的乘积</li>
+<li>对n阶矩阵进行行（列）初等变换，相当于矩阵A左（右）乘相应的初等变换</li>
+</ul>
+<h4 id="等价矩阵和矩阵的等价标准形"><a href="#等价矩阵和矩阵的等价标准形" class="headerlink" title="等价矩阵和矩阵的等价标准形"></a>等价矩阵和矩阵的等价标准形</h4><p>$$<br>设AB均为m \times n矩阵，若存在可逆矩阵P_{m\times m}Q_{n\times n}，\使得PAQ = B则称A,B为等价矩阵，记作A\cong B<br>\A是一个m\times n矩阵，则A等价于形如<br>\begin{bmatrix}<br>E_r &amp; O<br>\O&amp;O<br>\end{bmatrix}的矩阵<br>\（E_r中的r恰是r(A)）,后者称为A的等价标准形<br>\等价标准形是惟一的，若r(A) = r,则存在PAQ =<br>\begin{bmatrix}<br>E_r &amp; O<br>\O&amp;O<br>\end{bmatrix}<br>$$</p>
 <h2 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h2><h3 id="方针的幂"><a href="#方针的幂" class="headerlink" title="方针的幂"></a>方针的幂</h3><p><img src="https://s2.ax1x.com/2019/08/18/mQD9bV.png" alt="如何计算"></p>
 <p>拓展，对于特殊的矩阵可以</p>
 <p><img src="https://s2.ax1x.com/2019/08/18/mQDub6.png" alt="拓展"></p>
@@ -543,7 +567,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#知识点"><span class="nav-number">1.</span> <span class="nav-text">知识点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#转置矩阵"><span class="nav-number">1.1.</span> <span class="nav-text">转置矩阵</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#反对称矩阵"><span class="nav-number">1.1.1.</span> <span class="nav-text">反对称矩阵</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#正交矩阵"><span class="nav-number">1.1.2.</span> <span class="nav-text">正交矩阵</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#伴随矩阵"><span class="nav-number">1.1.3.</span> <span class="nav-text">伴随矩阵</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#逆矩阵"><span class="nav-number">1.1.4.</span> <span class="nav-text">逆矩阵</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#例题"><span class="nav-number">2.</span> <span class="nav-text">例题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方针的幂"><span class="nav-number">2.1.</span> <span class="nav-text">方针的幂</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#知识点"><span class="nav-number">1.</span> <span class="nav-text">知识点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#转置矩阵"><span class="nav-number">1.1.</span> <span class="nav-text">转置矩阵</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#反对称矩阵"><span class="nav-number">1.1.1.</span> <span class="nav-text">反对称矩阵</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#正交矩阵"><span class="nav-number">1.1.2.</span> <span class="nav-text">正交矩阵</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#伴随矩阵"><span class="nav-number">1.1.3.</span> <span class="nav-text">伴随矩阵</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#逆矩阵"><span class="nav-number">1.1.4.</span> <span class="nav-text">逆矩阵</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伴随矩阵及其运算"><span class="nav-number">1.2.</span> <span class="nav-text">伴随矩阵及其运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#初等变换与初等矩阵"><span class="nav-number">1.3.</span> <span class="nav-text">初等变换与初等矩阵</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#初等变换"><span class="nav-number">1.3.1.</span> <span class="nav-text">初等变换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#初等矩阵"><span class="nav-number">1.3.2.</span> <span class="nav-text">初等矩阵</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#初等矩阵性质"><span class="nav-number">1.3.3.</span> <span class="nav-text">初等矩阵性质</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#等价矩阵和矩阵的等价标准形"><span class="nav-number">1.3.4.</span> <span class="nav-text">等价矩阵和矩阵的等价标准形</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#例题"><span class="nav-number">2.</span> <span class="nav-text">例题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方针的幂"><span class="nav-number">2.1.</span> <span class="nav-text">方针的幂</span></a></li></ol></li></ol></div>
             
 
           </div>

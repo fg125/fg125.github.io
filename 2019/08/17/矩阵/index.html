@@ -90,7 +90,7 @@
 <meta property="og:image" content="https://s2.ax1x.com/2019/08/17/mKPGp8.jpg">
 <meta property="og:image" content="https://s2.ax1x.com/2019/08/18/mQD9bV.png">
 <meta property="og:image" content="https://s2.ax1x.com/2019/08/18/mQDub6.png">
-<meta property="og:updated_time" content="2019-08-30T03:12:21.073Z">
+<meta property="og:updated_time" content="2019-08-31T07:30:15.584Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="矩阵">
 <meta name="twitter:description" content="不同于行列式">
@@ -383,7 +383,7 @@
 <h4 id="初等矩阵"><a href="#初等矩阵" class="headerlink" title="初等矩阵"></a>初等矩阵</h4><blockquote>
 <p>由单位矩阵经过一次初等变换得到的矩阵称为初等矩阵</p>
 </blockquote>
-<p>$E_i(k)表示单位矩阵E的第i行（或第i列）乘以非零常数k所得到的的矩阵$</p>
+<p>$E_i(k)表示单位矩阵E的第i行（或第i列）乘以非零常数k所得到的的矩阵​$</p>
 <p>$E_{ij}表示单位矩阵交换第i行与第j行（列）所得到的矩阵$</p>
 <p>$E_{ij}(k)表示单位矩阵的第j行的k倍加到第i行（或第i列的k倍加到第j列）所得到的矩阵$</p>
 <h4 id="初等矩阵性质"><a href="#初等矩阵性质" class="headerlink" title="初等矩阵性质"></a>初等矩阵性质</h4><ul>
@@ -397,7 +397,7 @@
 <p>设A是m $\times$n的矩阵，A中最大的不为零的子行列式的阶数称为矩阵a的秩，记为r(A)</p>
 </blockquote>
 <h4 id="初等变换不改变矩阵的秩"><a href="#初等变换不改变矩阵的秩" class="headerlink" title="初等变换不改变矩阵的秩"></a>初等变换不改变矩阵的秩</h4><p>设A是m $\times$n矩阵，PQ分别是m,n阶可逆矩阵，则r(A) = r(PA) = r(AQ) = r(PAQ)</p>
-<h4 id="有关秩的等式和不等式"><a href="#有关秩的等式和不等式" class="headerlink" title="有关秩的等式和不等式"></a>有关秩的等式和不等式</h4><p>设A是m$\times$n矩阵，B是满足有关矩阵运算要求的矩阵，则：</p>
+<h4 id="有关秩的等式和不等式"><a href="#有关秩的等式和不等式" class="headerlink" title="有关秩的等式和不等式"></a>有关秩的等式和不等式</h4><p>设A是m$\times​$n矩阵，B是满足有关矩阵运算要求的矩阵，则：</p>
 <ol>
 <li>$0 \le r(A) \le min{m,n}​$</li>
 <li>r(kA) = r(A)$(k \ne 0)$</li>
@@ -408,7 +408,8 @@
 <li>r(AB) $\le$ r(A)+r(B)-n 当AB=O时，r(A)+r(B) $\le$ n,n是A的列数（或B的行数）</li>
 <li>r(A) = r($A^T$) = r($AA^T$) = r($A^TA$)</li>
 <li>$r(A^*) = \begin{cases} n,r(A)=n \1,r(A)=n-1\0,r(A)&lt;n-1\end{cases}$,其中A为n阶方阵</li>
-<li>若A是n阶方阵，$$</li>
+<li>若A是n阶方阵，$A^2=A$,则r(A)+r(E-A) = n</li>
+<li>若A是n阶方阵，$A^2 =E$，则r(A+E) + r(A-E) = n</li>
 </ol>
 <h2 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h2><h3 id="方针的幂"><a href="#方针的幂" class="headerlink" title="方针的幂"></a>方针的幂</h3><p><img src="https://s2.ax1x.com/2019/08/18/mQD9bV.png" alt="如何计算"></p>
 <p>拓展，对于特殊的矩阵可以</p>

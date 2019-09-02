@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Fg125,">
+  <meta name="keywords" content="Hexo, NexT">
 
 
 
@@ -79,18 +79,19 @@
 
 
 
-<meta name="description" content="这里我想从理论和实际来谈">
-<meta name="keywords" content="Fg125">
+<meta name="description" content="感觉差不点做出来第三题，让我们看看输在哪里了">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于我自己">
-<meta property="og:url" content="http://yoursite.com/2019/08/02/关于我自己/index.html">
+<meta property="og:title" content="第152期LeetCode及脱口秀大会第七期">
+<meta property="og:url" content="http://yoursite.com/2019/09/01/第152期LeetCode及脱口秀大会第七期/index.html">
 <meta property="og:site_name" content="FG125的不可说空间">
-<meta property="og:description" content="这里我想从理论和实际来谈">
+<meta property="og:description" content="感觉差不点做出来第三题，让我们看看输在哪里了">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-02T13:58:10.057Z">
+<meta property="og:image" content="https://s2.ax1x.com/2019/09/02/nCPUFU.png">
+<meta property="og:updated_time" content="2019-09-02T03:12:00.611Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于我自己">
-<meta name="twitter:description" content="这里我想从理论和实际来谈">
+<meta name="twitter:title" content="第152期LeetCode及脱口秀大会第七期">
+<meta name="twitter:description" content="感觉差不点做出来第三题，让我们看看输在哪里了">
+<meta name="twitter:image" content="https://s2.ax1x.com/2019/09/02/nCPUFU.png">
 
 
 
@@ -120,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/08/02/关于我自己/">
+  <link rel="canonical" href="http://yoursite.com/2019/09/01/第152期LeetCode及脱口秀大会第七期/">
 
 
 
 
 
-  <title>关于我自己 | FG125的不可说空间</title>
+  <title>第152期LeetCode及脱口秀大会第七期 | FG125的不可说空间</title>
   
 
 
@@ -245,7 +246,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/02/关于我自己/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/01/第152期LeetCode及脱口秀大会第七期/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="fg125">
@@ -262,7 +263,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">关于我自己</h1>
+          <h1 class="post-title" itemprop="name headline">第152期LeetCode及脱口秀大会第七期</h1>
         
 
         <div class="post-meta">
@@ -274,8 +275,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-02T21:02:13+08:00">
-                2019-08-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-01T21:50:04+08:00">
+                2019-09-01
               </time>
             
 
@@ -317,71 +318,19 @@
       
 
       
-        <p>这里我想从理论和实际来谈</p>
+        <p>感觉差不点做出来第三题，让我们看看输在哪里了</p>
 <a id="more"></a>
 
-<h2 id="理论"><a href="#理论" class="headerlink" title="理论"></a>理论</h2><ul>
-<li><p>自知+自律+自省</p>
+<h3 id="第三题"><a href="#第三题" class="headerlink" title="第三题"></a>第三题</h3><p><img src="https://s2.ax1x.com/2019/09/02/nCPUFU.png" alt></p>
+<p>看了第二名的思路</p>
 <ul>
-<li>自律或者说所谓的吃苦并不是忍受苦难的生活，而是为了你的目的忍受无聊的生活</li>
-<li>目的便是自知的一部分，你自己想要什么，有什么资源，优势和劣势</li>
-<li>自省则是在不断地<strong>选择，试错，练习</strong>的途中更新自己</li>
+<li>遍历字符串，构建[s.len][26]的数组，记录从0到i位置的各字母的数量</li>
+<li>另一个和我不同的点是我是计算抽取的字符串的奇偶，他是计算去掉回文（重复）部分的奇偶，不过影响不大</li>
+<li>这个真的是差点做出来，无论是后来把int[]改为bool[],还是更改计算a数量的方式,可惜了</li>
+<li><strong>总结下，想提高速度应该先想怎么把多次for循环操作整合成一次比较麻烦的操作，再考虑int改bool</strong></li>
 </ul>
-</li>
-<li><p>拒绝诱惑:世上有好多短暂的快乐，而延迟满足更能帮助你走的更远，想想张小龙，作为理科生，你更应该做的便是<a style="color:red">不断地计算</a>，<strong>想要成功，至少要知道怎样成功，差哪里，差多少，现在还剩多少技术栈未解决，需要多少时间，现在还有多少苦力活没解决，如何优化？</strong></p>
-<ul>
-<li>明明有好多事要做，一会刷b站一会刷微信还要跟别人聊天，你还要不要脸了</li>
-<li>你还是不是人了</li>
-<li>？</li>
-</ul>
-</li>
-<li><p>情绪管理</p>
-<ul>
-<li>好多时候，我们会陷入悲伤，二十分钟的事情可能要做一个半小时，你要学会接受自己的烂牌，而不是事后捶胸顿足。</li>
-<li>It won’t get easier，but you do get better at it.</li>
-<li>表面功夫：这个是基于情绪管理的拓展了，我们应该维持一个友好，靠谱的外在形象，也可以说是基本的人情世故</li>
-</ul>
-</li>
-<li><p>量力而行</p>
-<ul>
-<li><p>很多时候这个“力”，我“量”不清楚，咬咬牙帮人家一下，自己也能撑过去的。不妨陷入沉思，仔细思考。</p>
-</li>
-<li><p><a style="color:red">这里我是想说，当有好多事情想做的时候，学会放弃，别傻了。</a></p>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="实际"><a href="#实际" class="headerlink" title="实际"></a>实际</h2><ul>
-<li>第一部分是教你如何努力学习<ul>
-<li>明确的计划<ul>
-<li>一天的每时每刻要做什么</li>
-<li>这部分阶段的愿望小清单</li>
-</ul>
-</li>
-<li>关于玩手机（及其他诱惑）的处理<ul>
-<li>我看远离的那个办法就挺好，给手机一个合适的地方，再不给你一个合适的地方</li>
-<li>你自己要心里有b数啊，自律的话我写在上面了</li>
-</ul>
-</li>
-<li>困了咋整<ul>
-<li>睡觉是下策，那不是白玩了么</li>
-<li>出去溜达是中策</li>
-<li>听歌或者看ted，脱口秀或者跟别人说话</li>
-</ul>
-</li>
-<li>想她了<ul>
-<li>It won’t get easier，but you do get better at it.</li>
-</ul>
-</li>
-<li>单纯的不想学<ul>
-<li>看书，你准备了好多书</li>
-<li>写博客</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>第二部分暂缓</li>
-</ul>
+<h3 id="第四题"><a href="#第四题" class="headerlink" title="第四题"></a>第四题</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">findNumOfValidWords</span><span class="params">(String[] ws, String[] ps)</span> </span>&#123;</span><br><span class="line">        </span><br><span class="line">            <span class="keyword">int</span> len = ws.length;</span><br><span class="line">            <span class="keyword">int</span> s[] = <span class="keyword">new</span> <span class="keyword">int</span>[len];</span><br><span class="line">            <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">        HashMap&lt;Integer,Integer&gt; st = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">            <span class="keyword">for</span>(String w:ws)&#123;</span><br><span class="line">                <span class="keyword">for</span>(<span class="keyword">char</span> c:w.toCharArray())&#123;</span><br><span class="line">                    s[i] |= (<span class="number">1</span>&lt;&lt;(c-<span class="string">'a'</span>));</span><br><span class="line">                &#125;</span><br><span class="line">                st.put(s[i],st.getOrDefault(s[i],<span class="number">0</span>)+<span class="number">1</span>);</span><br><span class="line">                                i++;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        </span><br><span class="line">        List&lt;Integer&gt; li = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        </span><br><span class="line">        i = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(String p:ps)&#123;</span><br><span class="line">            <span class="keyword">int</span> c = p.charAt(<span class="number">0</span>)-<span class="string">'a'</span>;</span><br><span class="line">            <span class="keyword">int</span> all = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">char</span> t:p.toCharArray())&#123;</span><br><span class="line">                all |= <span class="number">1</span>&lt;&lt;(t-<span class="string">'a'</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">int</span> ct =<span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> x = all; x&gt;<span class="number">0</span>; x = (x-<span class="number">1</span>)&amp;all)&#123;</span><br><span class="line">                <span class="keyword">if</span>((x&amp;(<span class="number">1</span>&lt;&lt;c))&gt;<span class="number">0</span>)&#123;</span><br><span class="line">                    </span><br><span class="line">                    <span class="keyword">if</span>(st.containsKey(x))&#123;</span><br><span class="line">                        ct+=st.get(x);</span><br><span class="line">                    &#125;</span><br><span class="line">                    </span><br><span class="line">                    </span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            </span><br><span class="line"></span><br><span class="line">             li.add(ct);</span><br><span class="line">            </span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> li;</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
@@ -397,12 +346,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/Fg125/" rel="tag"># Fg125</a>
-          
-        </div>
-      
 
       
       
@@ -412,8 +355,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/08/01/可爱的头像/" rel="next" title="可爱的头像">
-                <i class="fa fa-chevron-left"></i> 可爱的头像
+              <a href="/2019/08/28/解决问题-精力匮乏/" rel="next" title="解决问题:精力匮乏">
+                <i class="fa fa-chevron-left"></i> 解决问题:精力匮乏
               </a>
             
           </div>
@@ -421,10 +364,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/08/04/LeetCode148及脱口秀大会第三期/" rel="prev" title="LeetCode148及脱口秀大会第三期">
-                LeetCode148及脱口秀大会第三期 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -549,7 +488,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#理论"><span class="nav-number">1.</span> <span class="nav-text">理论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实际"><span class="nav-number">2.</span> <span class="nav-text">实际</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#第三题"><span class="nav-number">1.</span> <span class="nav-text">第三题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第四题"><span class="nav-number">2.</span> <span class="nav-text">第四题</span></a></li></ol></div>
             
 
           </div>

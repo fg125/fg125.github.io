@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="编程,算法,LeetCode,周赛,">
+  <meta name="keywords" content="考研,数学,高数,">
 
 
 
@@ -79,21 +79,21 @@
 
 
 
-<meta name="description" content="先唠叨下题外话：关于为什么开始写 最近两周刷题成绩都有些差，然知耻而后勇，总要留个教训，而且不写的话很可能以后坚持不下来。">
-<meta name="keywords" content="编程,算法,LeetCode,周赛">
+<meta name="description" content="极大线性无关组：一个向量组中可以代表该向量组中所有成员的一组向量 代表的个数则为向量组的秩">
+<meta name="keywords" content="考研,数学,高数">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LeetCode 146周（前两道题）">
-<meta property="og:url" content="http://yoursite.com/2019/07/30/LeetCode-146周（前两道题）/index.html">
+<meta property="og:title" content="向量">
+<meta property="og:url" content="http://yoursite.com/2019/09/03/向量/index.html">
 <meta property="og:site_name" content="FG125的不可说空间">
-<meta property="og:description" content="先唠叨下题外话：关于为什么开始写 最近两周刷题成绩都有些差，然知耻而后勇，总要留个教训，而且不写的话很可能以后坚持不下来。">
+<meta property="og:description" content="极大线性无关组：一个向量组中可以代表该向量组中所有成员的一组向量 代表的个数则为向量组的秩">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://pic1.zhimg.com/v2-16e51d491f1409997fe838cf2ac9f384_b.png">
-<meta property="og:image" content="https://pic4.zhimg.com/v2-950d9f470f312941b1f1327176e39fcb_b.png">
-<meta property="og:updated_time" content="2019-07-31T02:21:13.520Z">
+<meta property="og:image" content="c:/ProgramSpace/GIT/Blog/fg125.github.io/source/_posts/assets/1567494331195.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/09/03/nk1vRg.png">
+<meta property="og:updated_time" content="2019-09-03T07:06:45.385Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LeetCode 146周（前两道题）">
-<meta name="twitter:description" content="先唠叨下题外话：关于为什么开始写 最近两周刷题成绩都有些差，然知耻而后勇，总要留个教训，而且不写的话很可能以后坚持不下来。">
-<meta name="twitter:image" content="https://pic1.zhimg.com/v2-16e51d491f1409997fe838cf2ac9f384_b.png">
+<meta name="twitter:title" content="向量">
+<meta name="twitter:description" content="极大线性无关组：一个向量组中可以代表该向量组中所有成员的一组向量 代表的个数则为向量组的秩">
+<meta name="twitter:image" content="c:/ProgramSpace/GIT/Blog/fg125.github.io/source/_posts/assets/1567494331195.png">
 
 
 
@@ -123,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/07/30/LeetCode-146周（前两道题）/">
+  <link rel="canonical" href="http://yoursite.com/2019/09/03/向量/">
 
 
 
 
 
-  <title>LeetCode 146周（前两道题） | FG125的不可说空间</title>
+  <title>向量 | FG125的不可说空间</title>
   
 
 
@@ -248,7 +248,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/30/LeetCode-146周（前两道题）/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/03/向量/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="fg125">
@@ -265,7 +265,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">LeetCode 146周（前两道题）</h1>
+          <h1 class="post-title" itemprop="name headline">向量</h1>
         
 
         <div class="post-meta">
@@ -277,8 +277,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-30T14:26:24+08:00">
-                2019-07-30
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-03T07:54:50+08:00">
+                2019-09-03
               </time>
             
 
@@ -320,18 +320,54 @@
       
 
       
-        <p><em>先唠叨下题外话：关于为什么开始写</em></p>
-<p><em>最近两周刷题成绩都有些差，然知耻而后勇，总要留个教训，而且不写的话很可能以后坚持不下来。</em></p>
+        <ul>
+<li>极大线性无关组：一个向量组中可以代表该向量组中所有成员的一<code>组</code>向量</li>
+<li>代表的个数则为向量组的秩</li>
+</ul>
 <a id="more"></a>
-<p>第一题</p>
-<p><img src="https://pic1.zhimg.com/v2-16e51d491f1409997fe838cf2ac9f384_b.png" alt="img"></p>
-<p>思路，毕竟第一题很简单做两个for循环就可以了，然而会超时。</p>
-<p>后来看到其他人用了python字典去统计数量，合理</p>
-<p>第二题</p>
-<p><img src="https://pic4.zhimg.com/v2-950d9f470f312941b1f1327176e39fcb_b.png" alt="img"></p>
-<p>这道题大妈教我用bfs做</p>
-<p>大妈说：</p>
-<p><strong>求最短路径这种问题都考虑用广度优先遍历，而在需要递归，回溯的这种考虑所有情况的时候，才考虑使用深度优先遍历</strong></p>
+<h2 id="向量及向量组的线性相关性"><a href="#向量及向量组的线性相关性" class="headerlink" title="向量及向量组的线性相关性"></a>向量及向量组的线性相关性</h2><ul>
+<li>线性组合：$某个向量P可以表示为：k_1a_1+k_2a_2+k_3a_3+…+k_ma_m​$,称为向量P为向量组$a_1,a_2…a_m的线性组合​$</li>
+<li>线性表出：其实上面的是线性表出的意思，组合就是多个向量组合下，不需要等于P</li>
+<li>线性相关：存在$k_1a_1+k_2a_2+k_3a_3+…+k_ma_m=0$，且k不全为0</li>
+<li>线性无关:不存在被</li>
+<li>单个非零向量，两个不成比例的向量均线性无关</li>
+<li>判别线性相关性的七大定理<ul>
+<li>向量组线性相关的充要条件是向量组至少有一个向量可由其余n-1个向量线性表出</li>
+<li>$\alpha_1,\alpha_2​$线性无关，$\beta_1,\alpha_1,\alpha_2​$线性相关，则$ \beta_1可由\alpha_1,\alpha_2线性表示，且表示法唯一​$</li>
+<li>如果向量组$\beta_1 ..\beta_t可由向量组\alpha_1,\alpha_s$线性表示，且t&gt;s，则$\beta_1 ..\beta_t$线性相关</li>
+<li>设m个n维向量$\alpha_1…\alpha_m​$,则向量组$\alpha_1…\alpha_m​$线性相关的充分必要条件是齐次线性方程组Ax=0有非零解[|A|=0]</li>
+<li>向量$\beta 可有向量组\alpha_1…\alpha_m​$线性表出，$Ax=\beta​$有解，r(A) = r([A,$\beta​$])</li>
+<li>如果$向量组\alpha_1…\alpha_m一部分向量线性相关，则整个向量组也线性相关​$</li>
+<li>如果一组$向量组\alpha_1…\alpha_m线性无关$，那么把这些向量各任意添加m个分量所得到的新向量（n+m维)组$向量组\alpha_1^<em>…\alpha_m^</em>$也线性无关，而如果$向量组\alpha_1…\alpha_m$线性相关，则他们各去掉若干个分量所得到的新向量组也是线性相关的。</li>
+</ul>
+</li>
+</ul>
+<h2 id="极大线性无关组，等价向量组，向量组的秩"><a href="#极大线性无关组，等价向量组，向量组的秩" class="headerlink" title="极大线性无关组，等价向量组，向量组的秩"></a>极大线性无关组，等价向量组，向量组的秩</h2><ul>
+<li>在向量组$\alpha_1…\alpha_s$中，若存在部分$\alpha_1…\alpha_m$满足：(1)$\alpha_1…\alpha_m$线性无关，(2)向量组中任意向量$\alpha_i$均可由$\alpha_1…\alpha_m$线性表出，则称向量组$\alpha_1…\alpha_m$是原向量组的极大线性无关组</li>
+<li>设两个向量组:（I）$\alpha_1…\alpha_m$ (II)$\beta_1…\beta_t$,若(I)中每个向量均可由(II)中线性表出，则称向量组(I)可有(II)线性表出，如果(I)(II)可以相互线性表出，则称(I)(II)等价向量组，记作$(I)\cong(II)$</li>
+<li><strong>等价向量组</strong>满足<ul>
+<li>$(I)\cong(I)$</li>
+<li>若$(I)\cong(II),则(II)\cong(I)​$</li>
+<li>若$(I)\cong(II),(II)\cong(III)，则有(I) \cong (III)$</li>
+<li>向量组和它的极大线性无关组是等价向量组</li>
+</ul>
+</li>
+<li>极大线性无关组所含向量的个数r称为向量组的秩<ul>
+<li>矩阵的秩=行列式的秩=向量组的秩</li>
+<li>若A通过初等行变换得到B，则<ul>
+<li>A的行向量组和B的行向量组是等价向量组</li>
+<li><a style="color:red">A和B的任何相应部分列向量组具有相同的线性无关性</a></li>
+</ul>
+</li>
+<li>设向量组$\alpha_1…\alpha_m$及向量组$\beta_t…\beta_s$均可由$\alpha_1…\alpha_m$线性表出，则$r(\beta_1..\beta_s) \leq r(\alpha_1…\alpha_m)$</li>
+</ul>
+</li>
+</ul>
+<h2 id="向量空间"><a href="#向量空间" class="headerlink" title="向量空间"></a>向量空间</h2><blockquote>
+<p>若$\xi_1,..\xi_n是n维向量空间R^n中的线性无关的有序向量组，则任一向量\alpha \in R^n$均可由$\xi_1…\xi_i$线性表出，称有序向量组$\xi_1,..\xi_n$ 是$R^n$的一个基，基向量的个数n称为向量空间的维数，而[$a_1,…,a_n$]称为向量a在基向量$\xi_1,..\xi_n$ 下的坐标，或称为$\alpha$的坐标行向量</p>
+</blockquote>
+<p><img src="C:\ProgramSpace\GIT\Blog\fg125.github.io\source\_posts\assets\1567494331195.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/09/03/nk1vRg.png" alt></p>
 
       
     </div>
@@ -349,13 +385,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/编程/" rel="tag"># 编程</a>
+            <a href="/tags/考研/" rel="tag"># 考研</a>
           
-            <a href="/tags/算法/" rel="tag"># 算法</a>
+            <a href="/tags/数学/" rel="tag"># 数学</a>
           
-            <a href="/tags/LeetCode/" rel="tag"># LeetCode</a>
-          
-            <a href="/tags/周赛/" rel="tag"># 周赛</a>
+            <a href="/tags/高数/" rel="tag"># 高数</a>
           
         </div>
       
@@ -368,8 +402,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/30/多元函数微分学/" rel="next" title="多元函数微分学">
-                <i class="fa fa-chevron-left"></i> 多元函数微分学
+              <a href="/2019/09/01/第152期LeetCode及脱口秀大会第七期/" rel="next" title="第152期LeetCode及脱口秀大会第七期">
+                <i class="fa fa-chevron-left"></i> 第152期LeetCode及脱口秀大会第七期
               </a>
             
           </div>
@@ -378,8 +412,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/31/数学概念不会本/" rel="prev" title="数学概念不会本">
-                数学概念不会本 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/09/04/这世界很痛苦，打不过还不给我记笔记/" rel="prev" title="这世界很痛苦，打不过还不给我记笔记">
+                这世界很痛苦，打不过还不给我记笔记 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -432,8 +466,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -486,6 +529,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#向量及向量组的线性相关性"><span class="nav-number">1.</span> <span class="nav-text">向量及向量组的线性相关性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#极大线性无关组，等价向量组，向量组的秩"><span class="nav-number">2.</span> <span class="nav-text">极大线性无关组，等价向量组，向量组的秩</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#向量空间"><span class="nav-number">3.</span> <span class="nav-text">向量空间</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

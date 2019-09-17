@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="编程,算法,LeetCode,周赛,">
+  <meta name="keywords" content="考研,数学,高数,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="今天LeetCode一道题都没做出来哦，完了看完答案还挺膨胀，我觉得这也不难啊">
-<meta name="keywords" content="编程,算法,LeetCode,周赛">
+<meta name="description" content="没啥说的，就是计算">
+<meta name="keywords" content="考研,数学,高数">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LeetCode148及脱口秀大会第三期">
-<meta property="og:url" content="http://yoursite.com/2019/08/04/LeetCode148及脱口秀大会第三期/index.html">
+<meta property="og:title" content="线性方程组">
+<meta property="og:url" content="http://yoursite.com/2019/09/13/线性方程组/index.html">
 <meta property="og:site_name" content="FG125的不可说空间">
-<meta property="og:description" content="今天LeetCode一道题都没做出来哦，完了看完答案还挺膨胀，我觉得这也不难啊">
+<meta property="og:description" content="没啥说的，就是计算">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-04T15:15:53.820Z">
+<meta property="og:updated_time" content="2019-09-14T06:37:29.118Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LeetCode148及脱口秀大会第三期">
-<meta name="twitter:description" content="今天LeetCode一道题都没做出来哦，完了看完答案还挺膨胀，我觉得这也不难啊">
+<meta name="twitter:title" content="线性方程组">
+<meta name="twitter:description" content="没啥说的，就是计算">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/08/04/LeetCode148及脱口秀大会第三期/">
+  <link rel="canonical" href="http://yoursite.com/2019/09/13/线性方程组/">
 
 
 
 
 
-  <title>LeetCode148及脱口秀大会第三期 | FG125的不可说空间</title>
+  <title>线性方程组 | FG125的不可说空间</title>
   
 
 
@@ -245,7 +245,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/04/LeetCode148及脱口秀大会第三期/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/13/线性方程组/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="fg125">
@@ -262,7 +262,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">LeetCode148及脱口秀大会第三期</h1>
+          <h1 class="post-title" itemprop="name headline">线性方程组</h1>
         
 
         <div class="post-meta">
@@ -274,8 +274,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-04T22:52:28+08:00">
-                2019-08-04
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-13T13:46:04+08:00">
+                2019-09-13
               </time>
             
 
@@ -317,14 +317,49 @@
       
 
       
-        <p><em>今天LeetCode一道题都没做出来哦，完了看完答案还挺膨胀，<u>我觉得这也不难啊</u></em></p>
+        <p>没啥说的，就是计算</p>
 <a id="more"></a>
 
-<p><strong>先说脱口秀大会</strong></p>
-<p>这期Rock的表现那种无理由的厌恶既然能讨好到我，就说明我不够成熟</p>
-<p>没了</p>
-<p><strong>再说LeetCode</strong></p>
-<p><a href="https://zhuanlan.zhihu.com/p/76651447" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/76651447</a></p>
+<h2 id="齐次线性方程组"><a href="#齐次线性方程组" class="headerlink" title="齐次线性方程组"></a>齐次线性方程组</h2><p>对于Ax = 0</p>
+<ul>
+<li>有解的条件<ul>
+<li>r（A）=n 时，向量组线性无关，方程组有唯一零解</li>
+<li>r(A) &lt; n时，方程组有非零解，且有n-r个线性无关解</li>
+</ul>
+</li>
+<li>解的性质<ul>
+<li>$A \xi_1 = 0 A\xi_2=0 则A(k_1\xi_1+k_2\xi_2) = 0 其中k_1,k_2是任意常数$</li>
+</ul>
+</li>
+<li>基础解系和解的结构<ul>
+<li>基础解系：设$\xi_1,\xi_2…\xi_{n-r}$满足:one: 方程组Ax=0的解 :two:线性无关 :three:方程组Ax=0在任一解均可由$\xi_1,\xi_2,\xi_{n-r}$线性表出，则称$\xi_1,\xi_2…\xi_{n-r}$为Ax=0的基础解系</li>
+<li>通解：设$\xi_1,\xi_2,\xi_{n-r}是Ax=0的基础解系，则k_1\xi_1+k_2\xi_2+k_3\xi_3+k_{n-r}\xi_{n-r}$ 是方程组Ax=0的通解，其中$k_1,k_2…k_{n-r}$是任意常数</li>
+</ul>
+</li>
+<li>求解方法与步骤<ul>
+<li>化为阶梯型矩阵</li>
+<li>按列找出一个秩为r的子矩阵，则剩余列的位置的未知数即为自由变量</li>
+<li>按基础解系定义求出$\xi_1,\xi_2…\xi_{n-r}$，并写出通解</li>
+</ul>
+</li>
+</ul>
+<h2 id="非齐次线性方程组"><a href="#非齐次线性方程组" class="headerlink" title="非齐次线性方程组"></a>非齐次线性方程组</h2><ul>
+<li>有解的条件<ul>
+<li>若$r(A) \ne r([ A,b]) (b不能由a_1,a_2,…a_n线性表出)$则方程组无解</li>
+<li>若$r(A) = r([A,b])=n(即a_1,a_2,a_n线性无关，a_1,a_2,a_n,b线性相关)​$ 则方程组有唯一解</li>
+<li>若$r(A) = r([A,b])=r&lt;n,则方程组无穷多解$</li>
+</ul>
+</li>
+<li>解的性质<ul>
+<li>设$\eta_1,\eta_2,\eta$是非齐次线性方程组Ax=b的解，$\xi$是对应齐次线性方程组Ax=0的解，则:one: $\eta_1-\eta_2$是Ax=0的解 :two: $k\xi +n$是Ax=b的解</li>
+</ul>
+</li>
+<li>求解的方法与步骤<ul>
+<li>化为阶梯型矩阵，求出对应的齐次线性方程组的通解，再加上一个非齐次线性方程组的特解即是非齐次线性方程组的通解</li>
+<li></li>
+</ul>
+</li>
+</ul>
 
       
     </div>
@@ -342,13 +377,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/编程/" rel="tag"># 编程</a>
+            <a href="/tags/考研/" rel="tag"># 考研</a>
           
-            <a href="/tags/算法/" rel="tag"># 算法</a>
+            <a href="/tags/数学/" rel="tag"># 数学</a>
           
-            <a href="/tags/LeetCode/" rel="tag"># LeetCode</a>
-          
-            <a href="/tags/周赛/" rel="tag"># 周赛</a>
+            <a href="/tags/高数/" rel="tag"># 高数</a>
           
         </div>
       
@@ -361,8 +394,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/08/02/关于我自己/" rel="next" title="关于我自己">
-                <i class="fa fa-chevron-left"></i> 关于我自己
+              <a href="/2019/09/04/这世界很痛苦，打不过还不给我记笔记/" rel="next" title="这世界很痛苦，打不过还不给我记笔记">
+                <i class="fa fa-chevron-left"></i> 这世界很痛苦，打不过还不给我记笔记
               </a>
             
           </div>
@@ -370,10 +403,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/08/05/是谁出的题这么难，到处都是标准答案/" rel="prev" title="是谁出的题这么难，到处都是标准答案">
-                是谁出的题这么难，到处都是标准答案 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -425,8 +454,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -479,6 +517,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#齐次线性方程组"><span class="nav-number">1.</span> <span class="nav-text">齐次线性方程组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#非齐次线性方程组"><span class="nav-number">2.</span> <span class="nav-text">非齐次线性方程组</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
